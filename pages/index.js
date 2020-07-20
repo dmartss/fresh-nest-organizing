@@ -1,12 +1,11 @@
-import Nav from "../components/nav";
+import Page from '@components/page'
 
 export default function IndexPage() {
   return (
-    <div>
-      <Nav />
-      <div className="hero">
+    <Page>
+      <article>
         <h1 className="title">Fresh Nest Organizing</h1>
-      </div>
-    </div>
-  );
+      </article>
+    </Page>
+  )
 }
