@@ -1,6 +1,6 @@
 import Head from '../head'
 import Nav from '../nav'
-// import Footer from './footer'
+import Footer from '../footer'
 import styles from './page.module.css'
 
 export default function Page({ title, description, image, children }) {
@@ -10,7 +10,7 @@ export default function Page({ title, description, image, children }) {
       <Nav />
       <main className={styles.main}>
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </main>
     </div>
   )
