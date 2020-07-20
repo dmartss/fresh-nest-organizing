@@ -1,19 +1,31 @@
 export default function Footer() {
   return (
     <footer>
-      <p>Fresh nest Organizing LLC</p>
-      <p>Services residential / business unpack setup</p>
-      <a href={`mailto:Feshnestorganizing@gmail.com`}>Feshnestorganizing@gmail.com </a>
-      <p>203-822-2197 </p>
-      <p>137 Hollow Tree Ridge Road</p>
-      <p>Darien, CT 06820</p>
+      <div>
+        <a href={`mailto:freshnestorganizing@gmail.com`}>freshnestorganizing@gmail.com</a>
+        <p>203-822-2197</p>
+      </div>
+      <div>
+        Copyright © {`${new Date().getFullYear()}`} Fresh Nest Organizing LLC, Inc. All rights
+        reserved.
+      </div>
+      <div>
+        <p>137 Hollow Tree Ridge Road</p>
+        <p>Darien, CT 06820</p>
+      </div>
+
       <style jsx>
         {`
           footer {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
-            margin-top: var(--gap-double);
+            position: fixed;
+            text-align: center;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid var(--fg);
           }
         `}
       </style>

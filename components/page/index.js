@@ -6,12 +6,14 @@ import styles from './page.module.css'
 export default function Page({ title, description, image, children }) {
   return (
     <div className={styles.wrapper}>
-      <Head title={`${title && `${title} - `}Fresh Nest`} description={description} image={image} />
+      <Head
+        title={`${title && `${title} - `}Fresh Nest Organizing`}
+        description={description}
+        image={image}
+      />
       <Nav />
-      <main className={styles.main}>
-        {children}
-        <Footer />
-      </main>
+      <main className={styles.main}>{children}</main>
+      <Footer />
     </div>
   )
 }
